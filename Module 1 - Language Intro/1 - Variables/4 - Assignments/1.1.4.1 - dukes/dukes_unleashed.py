@@ -8,8 +8,14 @@ Note: this problem does not require the "compounding interest" formula from the 
 
 """
 
-### Your code here ###
+in_state_cost = 30792
+out_state_cost = 47882
 
-in_state_gift = 0
+interest = 0.05
 
-out_state_gift = 0
+in_state_gift = in_state_cost/interest
+
+out_state_gift = out_state_cost/interest
+
+print("In state gift needed to return total yearly cost of tuition is", in_state_gift)
+print("Out of state gift needed to return total yearly cost of tuirion is", out_state_gift)

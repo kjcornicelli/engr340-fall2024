@@ -1,6 +1,9 @@
 # bring in randomness cause we need it in our lives
 import random
 
+from numpy.f2py.symbolic import integer_types
+
+
 ### Begin Dr. Forsyth Code. Do Not Modify ###
 
 # copy in Dr. Forsyth's random list function for use
@@ -28,4 +31,17 @@ nums = generate_random_int_list(max_length, upper_bound)
 num_evens = 0
 num_odds = 0
 
-### YOUR CODE BEGINS HERE ###
+### YOUR CODE BEGINS HERE ##
+for n in nums:
+    if n % 2 == 0:
+        num_evens = num_evens + 1
+    else:
+         num_odds = num_odds + 1
+
+print(num_evens)
+print(num_odds)
+
+
+
+
+

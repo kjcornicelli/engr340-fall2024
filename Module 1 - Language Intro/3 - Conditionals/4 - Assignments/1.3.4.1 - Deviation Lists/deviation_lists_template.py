@@ -3,6 +3,7 @@ Given two lists, use the standard deviation function from numpy to determine
 which language has the largest standard deviation. Usage will be np.std()
 https://numpy.org/doc/stable/reference/generated/numpy.std.html
 """
+from statistics import stdev
 
 """
 Dr. Forsyth's Code. Do Not Modify.
@@ -24,9 +25,15 @@ random_list_B = random.sample(range(100), random_length)
 
 ### YOUR CODE HERE
 
+if np.std(random_list_A) > np.std(random_list_B):
+    mylist = random_list_A
+elif np.std(random_list_B) > np.std(random_list_A):
+    mylist = random_list_B
+
 # set this variable equal to the list with the largest standard deviation
 # do not modify this variable's name, you can/should adjust the contents ;)
 # e.g. longest_list_is = myList
-longest_list_is = None
+longest_list_is = mylist
 
 ### YOUR CODE HERE
+print(longest_list_is)

@@ -28,6 +28,11 @@ Step 2: Iterate through the vector(s) and calculate the dot product
 dot_product = 0
 
 ### Your code here
+n = 0
+while n < fixed_length:
+    ps = vector_a[n]*vector_b[n]
+    dot_product = dot_product + ps
+    n=n+1
 
 """
 Step 3: Calculate the error of your dot_product compared with numpy's solution
